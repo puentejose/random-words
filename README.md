@@ -1,2 +1,5 @@
 # random-words
-A short and basic python program that shows random words from a list
+Short program I wrote for a creativity class workshop.
+
+### Write your own story
+Create a short story using the six words the program gave you.
