@@ -1,8 +1,8 @@
 import random
 
-WORDS = ("Boleto", "sidra", "sueño", "Dragón", "Carro",  "lavamanos", "Colador", "Cine", "Gladiador",
+palabras = ("Boleto", "Sidra", "Sueño", "Dragón", "Carro",  "lavamanos", "Colador", "Cine", "Gladiador",
          "computadora", "celular", "Lapiz", "pluma", "tractocamion", "palacio", "bocina", "pan",
-         "Libro", "Cigarro", "examen", "tarea", "software", "dado",
+         "Libro", "Cigarro", "Examen", "tarea", "software", "dado",
          "lentes", "lupa", "Mostaza", "Anciano", "Pensiones", "Valle",
          "Charco", "Monedero", "Plano", "Papel", "Botella", "Maceta",
          "Cuaderno", "Cuchillo", "Pantalones",
@@ -24,29 +24,14 @@ WORDS = ("Boleto", "sidra", "sueño", "Dragón", "Carro",  "lavamanos", "Colador
          "Angulo", "Pijama", "Corcho", "Politico", "Menu", "jamon", "policia",
          "espinaca", "supercalifragilisticoespidalidoso", "Jardin", "Hogar"
          )
-word = random.choice(WORDS)
-word2 = random.choice(WORDS)
-word3 = random.choice(WORDS)
-word4 = random.choice(WORDS)
-word5 = random.choice(WORDS)
-word6 = random.choice(WORDS)
 
-print (
-    "La primer palabra aleatoria es: ",word
-    )
-print (
-    "La segunda palabra aleatoria es: ",word2
-    )
-print (
-    "La tercera palabra aleatoria es: ",word3
-    )
-print (
-    "La cuarta palabra aleatoria es: ",word4
-    )
-print (
-    "La quinta palabra aleatoria es: ",word5
-    )
-print (
-    "La sexta palabra aleatoria es: ",word6
-    )
-input("\n\nPresiona cualquier tecla para salir")
+contador = 0
+lista = []
+
+while contador < 6:
+    lista.append(random.choice(palabras))
+    contador += 1
+
+print("\nTus palabras son: {}, {}, {}, {}, {} y {}".format(lista[0],lista[1],lista[2],lista[3],lista[4],lista[5]))
+
+input("\nPresiona cualquier tecla para salir\n")
